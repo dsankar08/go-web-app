@@ -16,7 +16,7 @@ RUN go build -o main .
 #Second stage
 
 # Distroless nonroot image 
-FROM gcr.io/distroless/static-debian12:nonroot
+FROM gcr.io/distroless/base:nonroot
 
 WORKDIR /app
 
