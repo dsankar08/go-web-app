@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: go-web-app
-        image: sankar08d/go-web-app:{{ .Values.image.tag }}
+        image: {{ .Values.image.repository }}
         ports:
         - containerPort: 8080
