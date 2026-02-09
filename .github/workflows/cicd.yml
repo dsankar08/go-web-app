@@ -57,7 +57,7 @@ jobs:
         context: .
         file: ./Dockerfile
         push: true
-        tags: user/app:latest
+        tags: ${{ vars.DOCKERHUB_USERNAME }}/go-web-app:${{github.run_id}}
 
   update-helm:
     runs-on: ubuntu-latest
